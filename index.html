@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gears & Gloss - Garage Invoice & Job Card Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/logo.jpg" alt="Gears & Gloss Logo">
+        <div class="brand-title">Gears <span>& Gloss</span></div>
+      </a>
+      <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#features" class="active">Features</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="delete-account.html">Delete Account</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="delete-account.html" class="btn btn-primary"><i class="fas fa-user-minus"></i> Account Portal</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge"><i class="fas fa-wrench"></i> Built for Automotive Garages & Detailing Studios</div>
+          <h1>Smart Invoicing & Job Cards <span>Made Effortless</span></h1>
+          <p>Create professional GST bills, manage vehicle job cards, track customer service history, collect UPI payments, and generate branded A4 PDFs instantly on Android.</p>
+          <div class="hero-actions">
+            <a href="#screenshots" class="btn btn-accent"><i class="fas fa-mobile-alt"></i> View App Screenshots</a>
+            <a href="delete-account.html" class="btn btn-outline"><i class="fas fa-user-shield"></i> Delete Account Facility</a>
+            <a href="privacy-policy.html" class="btn btn-outline"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+          </div>
+        </div>
+        <div class="hero-preview" style="text-align: center;">
+          <img src="assets/logo.jpg" alt="Gears & Gloss App Banner" style="max-width: 280px; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); border: 4px solid #334155;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Comprehensive Features</span>
+        <h2>Everything Your Garage Needs</h2>
+        <p>Engineered specifically for mechanics, auto repair centers, and detailing workshops.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+          <h3>GST Invoices & Estimates</h3>
+          <p>Generate Quotations, Estimates, GST Invoices, and Delivery Receipts with custom rates, item categories (Parts vs Labour), and tax rates.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-clipboard-list"></i></div>
+          <h3>Vehicle Job Card Tracking</h3>
+          <p>Record vehicle entry details, odometer readings, fuel level, technician notes, customer complaint checklists, and job statuses.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-car"></i></div>
+          <h3>Customer & Vehicle CRM</h3>
+          <p>Maintain complete customer profiles, phone numbers, vehicle registration details, and comprehensive past service histories.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-qrcode"></i></div>
+          <h3>UPI Payments & QR</h3>
+          <p>Embed your UPI ID, bank details, and instant payment links directly into invoice PDFs for fast customer settlements.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-file-pdf"></i></div>
+          <h3>Professional A4 PDF Export</h3>
+          <p>Export branded PDF bills with custom garage logos, company GSTIN/PAN, signature, and share via WhatsApp, Email, or Print.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Private & Offline First</h3>
+          <p>All sensitive financial data and customer information are stored securely on your local device with full offline availability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Screenshots Section -->
+  <section class="screenshots-section" id="screenshots">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">App Interface</span>
+        <h2>Screenshots of App Usage</h2>
+        <p>Explore the intuitive design and powerful workflows built into Gears & Gloss - Invoice Generator.</p>
+      </div>
+
+      <div class="screenshot-tabs">
+        <button class="tab-btn active" data-tab="tab-dashboard"><i class="fas fa-chart-line"></i> Dashboard</button>
+        <button class="tab-btn" data-tab="tab-invoice"><i class="fas fa-file-invoice"></i> Create Invoice</button>
+        <button class="tab-btn" data-tab="tab-jobcard"><i class="fas fa-tasks"></i> Job Card Intake</button>
+        <button class="tab-btn" data-tab="tab-customer"><i class="fas fa-address-book"></i> Customer Directory</button>
+        <button class="tab-btn" data-tab="tab-pdf"><i class="fas fa-file-pdf"></i> A4 PDF Invoice</button>
+      </div>
+
+      <div class="screenshot-display">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-status-bar">
+            <span>09:41</span>
+            <div><i class="fas fa-wifi"></i> <i class="fas fa-battery-full"></i></div>
+          </div>
+          <div class="phone-screen">
+
+            <!-- Screen 1: Dashboard -->
+            <div class="app-screen-content active" id="tab-dashboard">
+              <div class="mock-header">
+                <div>
+                  <div style="font-size:0.75rem; opacity:0.8;">Welcome Back</div>
+                  <div class="mock-title">Gears & Gloss Garage</div>
+                </div>
+                <i class="fas fa-sliders-h"></i>
+              </div>
+              <div class="mock-card" style="background: linear-gradient(135deg, #1E3A8A, #1E293B); color:#fff;">
+                <div style="font-size:0.75rem; opacity:0.8;">Total Revenue (This Month)</div>
+                <div style="font-size:1.4rem; font-weight:800; margin:0.25rem 0;">₹1,48,500.00</div>
+                <div style="font-size:0.7rem; color:#10B981;"><i class="fas fa-arrow-up"></i> +18.4% vs last month</div>
+              </div>
+
+              <div class="mock-card">
+                <div style="font-weight:700; font-size:0.85rem; margin-bottom:0.5rem;">Recent Invoices</div>
+                <div class="mock-stat">
+                  <div>
+                    <div style="font-weight:600;">INV-0042 (MH12 AB 1234)</div>
+                    <div style="font-size:0.7rem; color:#64748B;">Rajesh Kumar • Honda City</div>
+                  </div>
+                  <span class="mock-badge badge-paid">Paid</span>
+                </div>
+                <div class="mock-stat">
+                  <div>
+                    <div style="font-weight:600;">INV-0041 (KA01 MX 9988)</div>
+                    <div style="font-size:0.7rem; color:#64748B;">Anish Verma • Hyundai i20</div>
+                  </div>
+                  <span class="mock-badge badge-unpaid">Unpaid</span>
+                </div>
+              </div>
+
+              <button class="mock-button"><i class="fas fa-plus-circle"></i> + Create New Invoice</button>
+            </div>
+
+            <!-- Screen 2: Create Invoice -->
+            <div class="app-screen-content" id="tab-invoice">
+              <div class="mock-header">
+                <div class="mock-title"><i class="fas fa-arrow-left"></i> New Tax Invoice</div>
+                <div style="font-size:0.8rem; font-weight:600; color:#F59E0B;">INV-0043</div>
+              </div>
+
+              <div class="mock-card">
+                <div style="font-size:0.75rem; font-weight:700; color:#1E3A8A; margin-bottom:0.25rem;">CUSTOMER & VEHICLE</div>
+                <div style="font-size:0.85rem; font-weight:600;">Vikram Malhotra</div>
+                <div style="font-size:0.75rem; color:#64748B;">+91 98765 43210 • MH02 CD 5678</div>
+              </div>
+
+              <div class="mock-card">
+                <div style="font-size:0.75rem; font-weight:700; color:#1E3A8A; margin-bottom:0.25rem;">SERVICES & PARTS</div>
+                <table class="mock-table">
+                  <thead>
+                    <tr><th>Item</th><th>Qty</th><th>Rate</th><th>Total</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Synthetic Engine Oil 5W30</td><td>4L</td><td>₹850</td><td>₹3,400</td></tr>
+                    <tr><td>Oil Filter Replacement</td><td>1</td><td>₹350</td><td>₹350</td></tr>
+                    <tr><td>Full Engine Service Labour</td><td>1</td><td>₹1,200</td><td>₹1,200</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="mock-card">
+                <div class="mock-stat"><span>Subtotal:</span><strong>₹4,950.00</strong></div>
+                <div class="mock-stat"><span>GST (18%):</span><strong>₹891.00</strong></div>
+                <div class="mock-stat" style="font-size:0.9rem; font-weight:800; color:#1E3A8A;"><span>Total Payable:</span><strong>₹5,841.00</strong></div>
+              </div>
+
+              <button class="mock-button"><i class="fas fa-check-circle"></i> Save & Generate PDF</button>
+            </div>
+
+            <!-- Screen 3: Job Card Intake -->
+            <div class="app-screen-content" id="tab-jobcard">
+              <div class="mock-header">
+                <div class="mock-title"><i class="fas fa-arrow-left"></i> Create Job Card</div>
+                <span class="mock-badge badge-workshop">In Workshop</span>
+              </div>
+
+              <div class="mock-card">
+                <div style="font-size:0.75rem; font-weight:700; color:#1E3A8A;">VEHICLE INTAKE DETAILS</div>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; margin-top:0.5rem; font-size:0.75rem;">
+                  <div><strong>Reg No:</strong> DL03 CC 4321</div>
+                  <div><strong>Make/Model:</strong> Maruti Swift</div>
+                  <div><strong>Odometer:</strong> 42,150 km</div>
+                  <div><strong>Fuel Level:</strong> 50% (Half)</div>
+                </div>
+              </div>
+
+              <div class="mock-card">
+                <div style="font-size:0.75rem; font-weight:700; color:#1E3A8A; margin-bottom:0.25rem;">CUSTOMER COMPLAINTS</div>
+                <ul style="font-size:0.75rem; padding-left:1rem; color:#334155;">
+                  <li>Engine knocking sound at idle</li>
+                  <li>Brake squeal during high speed braking</li>
+                  <li>AC cooling insufficient</li>
+                </ul>
+              </div>
+
+              <div class="mock-card">
+                <div style="font-size:0.75rem; font-weight:700; color:#1E3A8A;">ASSIGNED TECHNICIAN</div>
+                <div style="font-size:0.8rem; font-weight:600; margin-top:0.2rem;">Suresh Technician (Bay #2)</div>
+              </div>
+
+              <button class="mock-button"><i class="fas fa-save"></i> Save Job Card</button>
+            </div>
+
+            <!-- Screen 4: Customer CRM -->
+            <div class="app-screen-content" id="tab-customer">
+              <div class="mock-header">
+                <div class="mock-title"><i class="fas fa-users"></i> Customer Directory</div>
+                <i class="fas fa-search"></i>
+              </div>
+
+              <div class="mock-card">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                  <div>
+                    <div style="font-weight:700; font-size:0.85rem;">Rajesh Kumar</div>
+                    <div style="font-size:0.7rem; color:#64748B;">Honda City • MH12 AB 1234</div>
+                    <div style="font-size:0.7rem; color:#1E3A8A;"><i class="fas fa-phone"></i> +91 98220 11223</div>
+                  </div>
+                  <button style="background:#DBEAFE; color:#1E3A8A; border:none; padding:0.3rem 0.6rem; border-radius:6px; font-size:0.7rem; font-weight:700;">3 Bills</button>
+                </div>
+              </div>
+
+              <div class="mock-card">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                  <div>
+                    <div style="font-weight:700; font-size:0.85rem;">Priya Sharma</div>
+                    <div style="font-size:0.7rem; color:#64748B;">Kia Seltos • KA05 MM 7766</div>
+                    <div style="font-size:0.7rem; color:#1E3A8A;"><i class="fas fa-phone"></i> +91 99001 88776</div>
+                  </div>
+                  <button style="background:#DBEAFE; color:#1E3A8A; border:none; padding:0.3rem 0.6rem; border-radius:6px; font-size:0.7rem; font-weight:700;">1 Bill</button>
+                </div>
+              </div>
+
+              <button class="mock-button"><i class="fas fa-user-plus"></i> + Add New Customer</button>
+            </div>
+
+            <!-- Screen 5: A4 PDF Preview -->
+            <div class="app-screen-content" id="tab-pdf">
+              <div class="mock-header" style="background:#059669;">
+                <div class="mock-title"><i class="fas fa-file-pdf"></i> A4 Invoice Preview</div>
+                <i class="fas fa-share-alt"></i>
+              </div>
+
+              <div class="mock-card" style="border: 2px solid #059669; font-size:0.65rem;">
+                <div style="text-align:center; border-bottom:1px solid #E2E8F0; padding-bottom:0.4rem; margin-bottom:0.4rem;">
+                  <strong style="font-size:0.85rem; color:#0F172A;">GEARS & GLOSS GARAGE</strong><br>
+                  Plot 14, Auto Hub Industrial Area, Pune<br>
+                  GSTIN: 27AAAAA0000A1Z5 | Phone: +91 98000 00000
+                </div>
+
+                <div style="display:flex; justify-content:space-between; margin-bottom:0.4rem;">
+                  <div><strong>Bill To:</strong> Rajesh Kumar<br>Vehicle: MH12 AB 1234</div>
+                  <div style="text-align:right;"><strong>Invoice #:</strong> INV-0042<br>Date: 24/09/2026</div>
+                </div>
+
+                <table class="mock-table" style="font-size:0.6rem;">
+                  <thead><tr style="background:#F8FAFC;"><th>Item</th><th>Qty</th><th>Rate</th><th>Total</th></tr></thead>
+                  <tbody>
+                    <tr><td>Synthetic Oil</td><td>4L</td><td>₹850</td><td>₹3,400</td></tr>
+                    <tr><td>Wheel Alignment</td><td>1</td><td>₹600</td><td>₹600</td></tr>
+                  </tbody>
+                </table>
+
+                <div style="text-align:right; margin-top:0.4rem; font-weight:800; color:#0F172A;">
+                  Grand Total: ₹4,720.00
+                </div>
+
+                <div style="background:#F1F5F9; padding:0.3rem; border-radius:4px; margin-top:0.4rem; text-align:center;">
+                  Pay via UPI: <strong>gearsandgloss@upi</strong>
+                </div>
+              </div>
+
+              <button class="mock-button" style="background:#059669;"><i class="fas fa-download"></i> Share PDF / WhatsApp</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Play Compliance Action Banner -->
+  <div class="container">
+    <div class="action-banner">
+      <div class="container">
+        <div class="banner-grid">
+          <div class="banner-card">
+            <h3><i class="fas fa-user-minus" style="color:#F59E0B;"></i> Delete Account & Data</h3>
+            <p>Need to remove your account or clear stored business profiles? Submit an account deletion request online anytime.</p>
+            <a href="delete-account.html" class="btn btn-accent"><i class="fas fa-external-link-alt"></i> Access Deletion Portal</a>
+          </div>
+          <div class="banner-card">
+            <h3><i class="fas fa-shield-alt" style="color:#2563EB;"></i> Privacy & Data Safety</h3>
+            <p>Understand how Gears & Gloss handles your device storage, customer phonebook permissions, and financial security.</p>
+            <a href="privacy-policy.html" class="btn btn-primary"><i class="fas fa-file-contract"></i> Read Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="assets/logo.jpg" alt="Logo">
+            <div class="brand-title">Gears <span>& Gloss</span></div>
+          </a>
+          <p>Professional Garage Management, Job Card, and GST Invoice Generation application for automotive workshops and detailing studios.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#screenshots">Screenshots</a></li>
+            <li><a href="delete-account.html">Delete Account</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>User Rights</h4>
+          <ul>
+            <li><a href="delete-account.html">Request Account Deletion</a></li>
+            <li><a href="privacy-policy.html#contacts-permission">Contacts Permission</a></li>
+            <li><a href="privacy-policy.html#data-security">Data Security</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support Contact</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> support@gearsandgloss.com</li>
+            <li><i class="fas fa-globe"></i> www.gearsandgloss.com</li>
+            <li><i class="fas fa-shield-alt"></i> Google Play Compliant</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Gears & Gloss Garage Solutions. All rights reserved.</div>
+        <div>Designed for Google Play Store Policy Compliance</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

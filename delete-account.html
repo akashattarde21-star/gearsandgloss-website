@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account & Data Deletion Facility - Gears & Gloss</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/logo.jpg" alt="Gears & Gloss Logo">
+        <div class="brand-title">Gears <span>& Gloss</span></div>
+      </a>
+      <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#screenshots">Screenshots</a>
+        <a href="delete-account.html" class="active">Delete Account</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="page-container">
+    <div class="container">
+
+      <!-- Page Header -->
+      <div class="section-header">
+        <span class="tag">Google Play Policy Compliance</span>
+        <h2>Account & Data Deletion Portal</h2>
+        <p>Request permanent deletion of your registered account profile, company setup, customer records, and stored invoice data associated with Gears & Gloss - Invoice Generator.</p>
+      </div>
+
+      <!-- Information & Alert Box -->
+      <div class="form-card" style="margin-bottom: 2rem;">
+        <div class="alert-box alert-warning">
+          <i class="fas fa-exclamation-triangle"></i>
+          <div>
+            <strong>Important Notice Regarding Data Deletion:</strong>
+            <p style="margin-top:0.25rem; font-size:0.9rem;">Submitting an account deletion request will permanently purge your business account credentials, garage details, customer phone directories, vehicle job card histories, and saved invoice documents.</p>
+          </div>
+        </div>
+
+        <h3 style="font-size:1.2rem; color:#0F172A; margin-bottom:0.75rem;"><i class="fas fa-info-circle" style="color:#2563EB;"></i> How Account Deletion Works</h3>
+        <p style="color:#475569; font-size:0.95rem; line-height:1.6; margin-bottom:1rem;">
+          Gears & Gloss is designed with a <strong>privacy-first architecture</strong> where primary user profile details, company GSTIN/PAN info, signature files, customer lists, and job card logs are stored locally in your device's secure app sandbox.
+        </p>
+        <ul style="color:#475569; font-size:0.95rem; padding-left:1.5rem; margin-bottom:1.5rem;">
+          <li><strong>Immediate In-App Deletion:</strong> You can purge all local account data instantly by clearing the app data in Android Settings &gt; Apps &gt; Gears & Gloss &gt; Storage &gt; Clear Storage / Clear Data, or by uninstalling the application.</li>
+          <li><strong>Web Account Support Request:</strong> Fill out the official form below to request account/data removal assistance from our support team.</li>
+        </ul>
+      </div>
+
+      <!-- Interactive Request Form -->
+      <div class="form-card">
+        <h3 style="font-size:1.4rem; color:#0F172A; margin-bottom:1.5rem; text-align:center;">
+          <i class="fas fa-user-times" style="color:#EF4444;"></i> Account Deletion Request Form
+        </h3>
+
+        <form id="deleteAccountForm">
+          <div class="form-group">
+            <label for="fullName">Account / Business Owner Name <span style="color:#EF4444;">*</span></label>
+            <input type="text" id="fullName" class="form-control" placeholder="e.g. Rajesh Kumar" required>
+          </div>
+
+          <div class="form-group">
+            <label for="accountEmail">Registered Email Address <span style="color:#EF4444;">*</span></label>
+            <input type="email" id="accountEmail" class="form-control" placeholder="e.g. rajesh@garage.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="accountPhone">Registered Phone Number / Business Name</label>
+            <input type="tel" id="accountPhone" class="form-control" placeholder="e.g. +91 98765 43210 or Gears & Gloss Workshop">
+          </div>
+
+          <div class="form-group">
+            <label for="deleteReason">Reason for Deletion (Optional)</label>
+            <select id="deleteReason" class="form-control">
+              <option value="">-- Select a reason --</option>
+              <option value="closing_business">Closing workshop / business</option>
+              <option value="switching_app">Switching to another invoicing tool</option>
+              <option value="privacy_concerns">Privacy or data concerns</option>
+              <option value="temporary_break">No longer need the app</option>
+              <option value="other">Other reason</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="margin-top:1.5rem; background:#F8FAFC; padding:1rem; border-radius:8px; border:1px solid #E2E8F0;">
+            <label style="margin-bottom:0.75rem; color:#0F172A;">Select Data Items to Purge:</label>
+            <div class="form-checkbox">
+              <input type="checkbox" id="dataProfile" checked disabled>
+              <label for="dataProfile" style="font-weight:normal; font-size:0.9rem;">User Profile & Login Credentials</label>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="dataCompany" checked disabled>
+              <label for="dataCompany" style="font-weight:normal; font-size:0.9rem;">Garage & Company GST/PAN Profile & Signature</label>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="dataCustomers" checked disabled>
+              <label for="dataCustomers" style="font-weight:normal; font-size:0.9rem;">Saved Customer Directories & Vehicle Logs</label>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="dataDocs" checked disabled>
+              <label for="dataDocs" style="font-weight:normal; font-size:0.9rem;">Invoice, Estimate, and Job Card History</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-checkbox">
+              <input type="checkbox" id="confirmDeletion" required>
+              <label for="confirmDeletion" style="font-weight:600; font-size:0.9rem; color:#0F172A;">
+                I understand that account deletion is permanent and cannot be reversed.
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-danger" style="width:100%; padding:0.85rem; font-size:1.05rem;">
+            <i class="fas fa-trash-alt"></i> Submit Deletion Request
+          </button>
+        </form>
+
+        <!-- Success Message State (Shown after form submission) -->
+        <div id="deleteSuccessCard" class="success-card">
+          <div class="success-icon"><i class="fas fa-check"></i></div>
+          <h3 style="font-size:1.5rem; color:#0F172A; margin-bottom:0.5rem;">Deletion Request Submitted</h3>
+          <p style="color:#475569; font-size:0.95rem; margin-bottom:1.5rem;">
+            Your account deletion ticket has been registered. You will receive a confirmation message at your registered email address.
+          </p>
+
+          <div style="background:#F1F5F9; border:1px dashed #CBD5E1; border-radius:12px; padding:1.25rem; margin-bottom:1.5rem; text-align:left;">
+            <div style="font-size:0.85rem; color:#64748B;">Request Reference Number:</div>
+            <div id="reqReference" style="font-size:1.25rem; font-weight:800; color:#1E3A8A; letter-spacing:1px; margin:0.25rem 0 0.75rem;">GG-DEL-849201</div>
+            <div style="font-size:0.85rem; color:#64748B;">Processing Timeline:</div>
+            <div style="font-size:0.95rem; font-weight:600; color:#0F172A;">Instant for local device storage / Within 3 business days for support logs.</div>
+          </div>
+
+          <a href="index.html" class="btn btn-primary"><i class="fas fa-home"></i> Return to Homepage</a>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 Gears & Gloss Garage Solutions. All rights reserved.</div>
+        <div>
+          <a href="index.html" style="color:#94A3B8; margin-right:1rem;">Home</a>
+          <a href="privacy-policy.html" style="color:#94A3B8;">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
